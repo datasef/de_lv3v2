@@ -4,8 +4,8 @@ import numpy as np
 from datetime import datetime, timedelta
 
 st.set_page_config(page_title="Quick Sales Dashboard", layout="wide")
-st.title("⚡ Quick Sales Dashboard (1-file demo)")
-st.caption("Sinh dữ liệu giả lập ngay trong app để deploy nhanh lên Streamlit Cloud.")
+st.title("Sales Dashboard ")
+st.caption("Sinh dữ liệu giả lập ngay trong app để deploy trên Streamlit Cloud.")
 
 @st.cache_data
 def make_data(n=1500, seed=1):
@@ -70,4 +70,4 @@ top_cat = dff.groupby('category', as_index=False)['revenue'].sum().sort_values('
 st.subheader("Top Categories by Revenue")
 st.bar_chart(top_cat, x='category', y='revenue', height=280)
 
-st.caption("One-file app – không cần CSV/DB. Dùng để demo nhanh trên Streamlit Cloud.")
+st.caption("One-file app")
