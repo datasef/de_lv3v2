@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 
-st.set_page_config(page_title="Quick Sales Dashboard", layout="wide")
+st.set_page_config(page_title="Quick Sales Dashboard Streamlit Cloud", layout="wide")
 st.title("Sales Dashboard ")
 st.caption("Sinh dữ liệu giả lập ngay trong app để deploy trên Streamlit Cloud.")
 
